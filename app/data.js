@@ -1,0 +1,118 @@
+// NusaStat data: verified national figures for Indonesia, all from Statistics
+// Indonesia (BPS) unless a line says otherwise. Every figure shown on the site
+// carries its source and year. Only the ten provinces below have verified
+// mid-2024 population figures, so the site lists those ten and no others.
+
+export const DATA = {
+  meta: {
+    country: 'Indonesia',
+    source: 'Statistics Indonesia (BPS)',
+    updated: 'November 2026',
+  },
+  population: {
+    total2024: 281603800,
+    total2023: 278696200,
+    total2022: 275773800,
+    census2020: 270200000,
+    growth2024: 1.04,
+    worldRank: 4,
+    landAreaKm2: 1890179.78,
+    density: 149,
+    trend: [
+      { year: 2020, value: 270.2 },
+      { year: 2022, value: 275.8 },
+      { year: 2023, value: 278.7 },
+      { year: 2024, value: 281.6 },
+    ],
+    generations: [
+      { label: 'Gen Z', share: 24.93 },
+      { label: 'Millennials', share: 24.34 },
+    ],
+    elderlyNote: 'People aged 60 and above are more than 10% of the population.',
+    generationSource: 'SUPAS 2025, BPS',
+  },
+  economy: {
+    gdpNominal2024: 22139.0,
+    gdpNominal2023: 20892.4,
+    gdpPerCapitaRp: 78.6,
+    gdpPerCapitaUsd: 4960.3,
+    growth: [
+      { year: 2020, value: -2.07 },
+      { year: 2021, value: 3.7 },
+      { year: 2022, value: 5.31 },
+      { year: 2023, value: 5.05 },
+      { year: 2024, value: 5.03 },
+    ],
+    inflationDec2024: 1.57,
+    inflationDec2023: 2.61,
+    coreInflation: 2.26,
+    cpiDec2024: 106.8,
+    trade: [
+      { year: 2021, exports: 231.61, imports: 196.27, surplus: 35.34 },
+      { year: 2022, exports: 291.9, imports: 237.44, surplus: 54.46 },
+      { year: 2023, exports: 258.82, imports: 221.93, surplus: 36.89 },
+      { year: 2024, exports: 264.7, imports: 233.66, surplus: 31.04 },
+    ],
+    exportGrowth2024: 2.29,
+    surplusStreak: 5,
+    unemployment: {
+      aug2024: 4.91,
+      aug2023: 5.32,
+      feb2024: 4.82,
+      peopleAug2024: 7.47,
+      labourForceAug2024: 152.11,
+      youth1524: 17.32,
+      highestProvince: 'West Java',
+      highestProvinceRate: 6.75,
+    },
+    poverty: {
+      sep2024: 8.57,
+      sep2024People: 24.06,
+      mar2024: 9.03,
+      mar2024People: 25.22,
+      urban: 6.66,
+      rural: 11.34,
+      lineRp: 595242,
+    },
+  },
+  humanDevelopment: {
+    hdi: [
+      { year: 2020, value: 72.81 },
+      { year: 2021, value: 73.16 },
+      { year: 2022, value: 73.77 },
+      { year: 2023, value: 74.39 },
+      { year: 2024, value: 75.02 },
+    ],
+    lifeExpectancy2024: 74.15,
+    expectedSchooling2024: 13.21,
+    meanSchooling2024: 8.85,
+    expenditure2024: 12.34,
+    highestProvince: 'DKI Jakarta',
+    highestProvinceHdi: 84.15,
+  },
+  health: {
+    infantMortality: [
+      { year: 2010, value: 26.09 },
+      { year: 2025, value: 14.12 },
+    ],
+    maternalMortality: [
+      { year: 2010, value: 346 },
+      { year: 2025, value: 144 },
+    ],
+    fertility2025: 2.13,
+    source: 'SUPAS 2025, BPS',
+  },
+  provinces: [
+    { name: 'West Java', population: 50.35, share: 17.88, note: 'Largest province by population. Highest provincial unemployment rate, 6.75% (Aug 2024).' },
+    { name: 'East Java', population: 41.81, share: 14.85, note: 'Second largest province by population.' },
+    { name: 'Central Java', population: 37.89, share: 13.46, note: 'Third largest province by population.' },
+    { name: 'North Sumatra', population: 15.59, share: 5.54, note: 'Largest province on Sumatra by population.' },
+    { name: 'Banten', population: 12.43, share: null, note: 'West of Jakarta, on Java.' },
+    { name: 'DKI Jakarta', population: 10.7, share: null, note: 'Capital region. Highest provincial HDI, 84.15 (2024).' },
+    { name: 'South Sulawesi', population: 9.5, share: null, note: 'Largest province on Sulawesi by population.' },
+    { name: 'Lampung', population: 9.4, share: null, note: 'Southern tip of Sumatra.' },
+    { name: 'South Sumatra', population: 8.8, share: null, note: 'On Sumatra.' },
+    { name: 'Riau', population: 6.7, share: null, note: 'On Sumatra.' },
+  ],
+  javaShare: 56,
+};
